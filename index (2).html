@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI/ML Student Portfolio | GNIT Kolkata</title>
+  <meta name="description" content="Premium student portfolio website for GNIT Kolkata ECE 2nd year students trained in AI/ML at Ardent Computech Pvt. Ltd." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       Skip Link
+  ========================== -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =========================
+       Animated Background Layers
+  ========================== -->
+  <div class="bg-gradient-layer" aria-hidden="true"></div>
+  <div class="bg-noise-layer" aria-hidden="true"></div>
+
+  <!-- =========================
+       Header / Navbar
+  ========================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="brand">
+        <span class="brand-mark">AI</span>
+        <span class="brand-text">GNIT Portfolio</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false" title="Toggle theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <span>Dark</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">Journey</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#students" class="nav-link">Students</a></li>
+        <li><a href="#vision" class="nav-link">Vision</a></li>
+        <li><a href="#trainer" class="nav-link">Trainer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================
+       Main Content
+  ========================== -->
+  <main id="main-content">
+    <!-- =========================
+         Hero Section
+    ========================== -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <span class="training-badge">
+            <i class="fa-solid fa-certificate"></i>
+            <span id="heroBadgeText">10 Days AI/ML Training Completed</span>
+          </span>
+          <h1 id="heroTitle">AI/ML Student Portfolio</h1>
+          <p id="heroSubtitle">
+            GNIT Kolkata | 2nd Year ECE | Ardent Computech Pvt. Ltd.
+          </p>
+          <p class="student-names-line" id="studentNamesLine"></p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#skills" class="btn btn-ghost">Explore Skills</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal tilt-card" data-tilt>
+          <h2>Training Snapshot</h2>
+          <p>
+            Practical AI/ML learning journey with project-first execution, real datasets,
+            coding discipline, and career-focused direction.
+          </p>
+          <div class="hero-panel-grid">
+            <article>
+              <i class="fa-solid fa-clock"></i>
+              <h3>10 Days</h3>
+              <p>Intensive hands-on learning</p>
+            </article>
+            <article>
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>9 Projects</h3>
+              <p>Beginner to intermediate portfolio</p>
+            </article>
+            <article>
+              <i class="fa-solid fa-list-check"></i>
+              <h3>60 MCQs</h3>
+              <p>Concept clarity and revision</p>
+            </article>
+            <article>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h3>13+ Tools</h3>
+              <p>Industry-relevant ecosystem</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         About / Training Journey
+    ========================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Training Journey</p>
+          <h2>From Curiosity to Practical AI/ML Execution</h2>
+        </div>
+
+        <div class="about-layout">
+          <article class="glass-card reveal">
+            <h3>Who We Are</h3>
+            <p id="aboutTextPrimary"></p>
+            <p id="aboutTextSecondary"></p>
+          </article>
+
+          <article class="glass-card reveal">
+            <h3>Program Focus</h3>
+            <ul class="journey-list" id="journeyList"></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Highlights / Counters
+    ========================== -->
+    <section class="section" id="highlights" aria-label="Training highlights">
+      <div class="container">
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Skills Section
+    ========================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills & Tools</p>
+          <h2>Technology Stack Explored During Training</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Projects Section
+    ========================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Project Showcase</p>
+          <h2>9 Practical Projects Built During AI/ML Training</h2>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Student Profiles
+    ========================== -->
+    <section class="section" id="students">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Student Profiles</p>
+          <h2>Student Individual Projects</h2>
+        </div>
+        <div class="students-grid" id="studentsGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Career Vision
+    ========================== -->
+    <section class="section" id="vision">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Career Vision</p>
+          <h2>Future Goals in AI, Data, and Intelligent Automation</h2>
+        </div>
+        <div class="vision-timeline" id="visionTimeline"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Trainer Section
+    ========================== -->
+    <section class="section" id="trainer">
+      <div class="container">
+        <article class="trainer-card reveal">
+          <div class="trainer-icon" aria-hidden="true">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <div>
+            <p class="eyebrow">Mentorship</p>
+            <h2 id="trainerHeading">Trained by SK SAHIL</h2>
+            <p id="trainerSubtitle">Full Stack AI Developer</p>
+            <p id="trainerLine"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3 id="footerTitle">AI/ML Portfolio Showcase</h3>
+        <p id="footerMeta"></p>
+        <p class="copyright" id="copyrightText"></p>
+      </div>
+
+      <div class="footer-social" id="footerSocialLinks"></div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
